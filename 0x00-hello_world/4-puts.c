@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- * main - print a phrase using puts
+/**
+ * main -Print a phrase using puts
  * don't use printf
- * return (zero)
+ * Return: 0
  */
 int main(void)
 {
