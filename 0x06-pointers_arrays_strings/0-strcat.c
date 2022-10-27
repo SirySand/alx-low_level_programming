@@ -6,6 +6,7 @@
  * @src: copy from
  * Return: pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -19,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	l = 0;
 	while (src[l] != '\0')
 	{
-		dest[i] = src[l]
+		dest[i] = src[l];
 		i++;
 		l++;
 	}
