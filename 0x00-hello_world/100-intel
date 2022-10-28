@@ -1,0 +1,4 @@
+#!/bin/bash
+touch code.c
+gcc -S -masm=intel -Og -fverbose-asm code.c
+export CFILE=code.c
