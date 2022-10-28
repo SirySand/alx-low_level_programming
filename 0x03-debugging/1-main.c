@@ -2,7 +2,6 @@
 
 /**
  * main - causes an infinite loop
- *
  * Return: 0
  */
 
@@ -16,10 +15,10 @@ int main(void)
 
 	        while (i < 10)
 	        {
-	                putchar(i);
+	                putchar(i); /*should be a i++ on nextline*/
 	        }
-/* Before closing the bracket,there should be a line incrementing i */
-	        printf("Infinite loop avoided! \\o/\n");
+
+		printf("Infinite loop avoided! \\o/\n");
 
 	        return (0);
 }

@@ -2,6 +2,7 @@
 
 /**
  * main - tests function that prints if integer is positive or negative
+ * positive_or_negative - function to check the sign of a number
  * Return: 0
  */
 int main(void)
@@ -12,5 +13,5 @@ int main(void)
 
 		positive_or_negative(i);
 
-		return (0);
+		return (i);
 }
