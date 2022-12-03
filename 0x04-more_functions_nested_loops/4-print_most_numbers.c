@@ -13,10 +13,11 @@ void print_most_numbers(void)
 	for (c = 48; c < 58; i++)
 	{
 		if (c == 50 || c == 52)
+		{
 			c++;
-		else
-			putchar(c);
-			c++;
+		}
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 }
