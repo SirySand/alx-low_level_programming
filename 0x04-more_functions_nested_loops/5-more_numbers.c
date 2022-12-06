@@ -12,16 +12,15 @@ void more_numbers(void)
 	{
 		while (i < 10)
 		{
-			print_numbers();
+			putchar((i % 10) + '0');
+			i++;
 		}
 			putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
 	}
 }
 /**
- * main - a function that print x times
- *
- * Return: 0 always success
+ * main - function de départ
  */
 int main(void)
 {
@@ -32,5 +31,5 @@ int main(void)
 		more_numbers();
 		putchar('\n');
 	}
-	return (0);
+	return 0;
 }
