@@ -3,8 +3,6 @@
 
 /**
  * more_numbers - function that prints numbers x times
- *
- * main - start of the function
  */
 void more_numbers(void)
 {
@@ -20,6 +18,11 @@ void more_numbers(void)
 			putchar((i % 10) + '0');
 	}
 }
+/**
+ * main - a function that print x times
+ *
+ * Return: 0 always success
+ */
 int main(void)
 {
 	int j;
@@ -29,4 +32,5 @@ int main(void)
 		more_numbers();
 		putchar('\n');
 	}
+	return (0);
 }
