@@ -32,6 +32,7 @@ int main(void)
 			printf("%d", i);
 			putchar('\040');
 		}
+		putchar('\n');
 	}
 	return (0);
 }
