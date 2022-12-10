@@ -18,13 +18,3 @@ void print_square(int size)
 		putchar('\n');
 	}
 }
-/**
- * main - check the code
- *
- * Return: 0 Always (success)
- */
-int main(void)
-{
-	print_square(10);
-	return (0);
-}
