@@ -1,10 +1,10 @@
 # This a makefile
 
-CC=gcc
+CC=gcc -9
 
 SRC=$(ls *.c)
 
 all: school
 
 school : main.c school.c
-	$(CC) main.c school.c -o school 
+	$(CC) $(SRC) -o school 
