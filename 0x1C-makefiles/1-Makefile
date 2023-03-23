@@ -7,4 +7,4 @@ SRC=$(ls *.c)
 all: school
 
 school : main.c school.c
-	$(CC) $(SRC) -o school 
+	$(CC) main.c school.c -o school 
