@@ -1,8 +1,8 @@
 # This a makefile
 
-CC=gcc-9.3.0
+CC=usr/bin/gcc-9.3.0
 
-SRC="{main.c,school.c}"i
+SRC=$(ls *.c)
 
 all: school
 
