@@ -1,6 +1,6 @@
 # This a makefile
 
-CC=usr/bin/gcc-9.3.0
+CC=gcc
 
 SRC=$(ls *.c)
 
