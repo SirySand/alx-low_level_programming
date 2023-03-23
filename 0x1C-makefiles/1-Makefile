@@ -1,0 +1,9 @@
+# This a makefile
+
+CC=gcc-9.3.0
+
+SRC=$(ls *.c)
+
+all: school
+
+school : main.c school.c
