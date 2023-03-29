@@ -2,9 +2,9 @@
 
 CC=gcc
 
-SRC=$(ls *.c)
+SRC=*.c
 
 all: school
 
 school: $(SRC)
-$(CC) $(SRC) -o school
+$(CC) -o school $(SRC)
