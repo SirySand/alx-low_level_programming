@@ -4,7 +4,7 @@ CC = gcc
 
 SRC = main.c school.c
 
-.RECIPEPREFIX = 	
-
 all: school
+
+school: main.c school.c
 	$(CC) $(SRC) -o school
