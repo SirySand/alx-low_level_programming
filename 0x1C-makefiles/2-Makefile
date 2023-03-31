@@ -1,15 +1,17 @@
 # This a makefile
 
-CC=gcc-9
+CC = gcc
 
-OBJ="{school.o,main.o}"
+OBJ = school.o main.o
 
-SRC=$(ls *.c)
+SRC = $(ls *.c)
 
-NAME=school
+NAME = school
 
-all: $(NAME)
+all: source school
 
-$(NAME): $(SRC)
-	$(CC) -c -o $(SRC) $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+source: main.c school.c
+	$(CC) $(SRC) -o source
+
+school: main.o school.o
+	$(CC) $(OBJ) -o school
