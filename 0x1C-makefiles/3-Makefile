@@ -4,12 +4,22 @@ CC = gcc
 
 OBJ = $(SRC:.c=.o)
 
-SRC = $(ls *.c)
+SRC = main.c school.c
 
 NAME = school
+
+RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) -o $(NAME) $(OBJ)
 
+%.o:%.c
+	$(CC) -c $< -o $@
+
+clean:
+	$(RM)*.o
+	$(RM).vims**.swp
+
+oclean:
