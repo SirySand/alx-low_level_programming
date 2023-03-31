@@ -8,7 +8,8 @@ SRC = main.c school.c
 
 NAME = school
 
-all:
+all: school
+
 	$(CC)	-c -o main.o main.c
 	$(CC)	-c -o school.o school.c
 	$(CC) main.o school.o -o school
@@ -16,3 +17,5 @@ all:
 	echo "/* School */" >> main.c
 	$(CC) 	-c -o main.o main.c
 	$(CC) main.o school.o -o school
+school: main.c school.c
+	$(CC) main.c school.c -o school
